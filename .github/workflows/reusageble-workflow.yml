@@ -6,14 +6,14 @@ on:
       artifact-name:
         description: The name of deployable artifact name
         required: false
-        default: dist
+        # default: dist
         type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Get build artifacts
+      - name: Get code
         uses: actions/download-artifact@v3
         with:
           name: ${{ inputs.artifact-name }}
