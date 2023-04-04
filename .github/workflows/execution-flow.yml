@@ -67,6 +67,6 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/reusageble-workflow.yml
-    with: 
-      artifact-name: dist-files
+    # with: 
+    #   artifact-name: dist-files
       # artifact-kk: dist-files -> Not Run
